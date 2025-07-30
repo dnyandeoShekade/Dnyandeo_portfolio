@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button"
+import Button from '@/components/ui/button'
 import { FiArrowDown, FiArrowUpRight } from "react-icons/fi"
 import Link from "next/link"
 
