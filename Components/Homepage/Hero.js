@@ -1,4 +1,3 @@
-import Button from '@/components/ui/button'
 import { FiArrowDown, FiArrowUpRight } from "react-icons/fi"
 import Link from "next/link"
 
@@ -33,23 +32,15 @@ export function HeroSection({
         {description}
       </p>
       <div className="flex flex-col sm:flex-row gap-4 mb-20">
-        {/* <Link id="#project" href={primaryButtonLink} passHref>
-          <Button className="bg-[#477BC9] text-white px-8 py-6 rounded-lg text-lg font-medium hover:bg-home-button-bg/90 transition-colors">
-            {primaryButtonText}
-          </Button>
-        </Link> */}
         <Link href="#project" scroll={true}>
-  <Button className="bg-[#477BC9] text-white px-8 py-6 rounded-lg text-lg font-medium hover:bg-home-button-bg/90 transition-colors">
-    {primaryButtonText}
-  </Button>
-</Link>
+          <button className="bg-[#477BC9] text-white px-8 py-6 rounded-lg text-lg font-medium hover:bg-home-button-bg/90 transition-colors">
+            {primaryButtonText}
+          </button>
+        </Link>
         <Link href={secondaryButtonLink} passHref>
-          <Button
-            variant="outline"
-            className="bg-transparent border border-gray-700 text-white px-8 py-6 rounded-lg text-lg font-medium hover:bg-gray-800 transition-colors flex items-center gap-2"
-          >
+          <button className="bg-transparent border border-gray-700 text-white px-8 py-6 rounded-lg text-lg font-medium hover:bg-gray-800 transition-colors flex items-center gap-2">
             {secondaryButtonText} <FiArrowUpRight className="w-5 h-5" />
-          </Button>
+          </button>
         </Link>
       </div>
       <Link href={scrollLink} className="flex flex-col items-center text-nav-link-gray hover:text-white transition-colors">

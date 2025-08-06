@@ -3,7 +3,7 @@
 import { motion, useInView, useAnimation } from "framer-motion"
 import { useEffect, useRef } from "react"
 
-export function WorkExperienceSection() {
+export function ProjectSection() {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, amount: 0.3 })
   const controls = useAnimation()

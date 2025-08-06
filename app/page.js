@@ -1,14 +1,13 @@
-import  AboutMeSection  from "@/components/homepage/About";
-import HeroSection from "@/components/homepage/HeroSection";
-import  WorkExperienceSection  from "@/components/homepage/Project";
-import Image from "next/image";
+import { AboutMeSection } from "@/Components/homepage/About";
+import { HeroSection } from "@/Components/homepage/Hero";
+import { ProjectSection } from "@/Components/homepage/Project";
 
 export default function Home() {
   return (
     <div>
       <HeroSection/>
       <AboutMeSection/>
-      <WorkExperienceSection/>
+      <ProjectSection/>
     </div>
   );
 }
